@@ -3,7 +3,7 @@ const router = require('express').Router()
 const NumbersController = require('../controllers/numbersController')
 
 router.get(
-  '/multiplicity',
+  '/multiplicity/:number',
   NumbersController.checkMultiplicity,
 )
 
