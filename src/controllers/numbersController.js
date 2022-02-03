@@ -1,16 +1,26 @@
+const { getMultiplicityType } = require('../utils/numbersUtil')
+
 /**
  * @class NumbersController
  */
 class NumbersController {
   /**
-   * Handler for Test Get endpoint
+   * Handler for endpoint to check number multiplicity
    *
    * @param {object} req
    * @param {object} res
-   * @return {Promise<*>}
+   * @returns {Promise<*>}
    */
   static async checkMultiplicity(req, res) {
-    return res.status(200).json({ test: true })
+    const { params: { number } } = req
+
+    const multiplicityType = getMultiplicityType(Number(number))
+
+    const data = {
+      ...(multiplicityType ? { multiplicityType } : { number }),
+    }
+
+    return res.status(200).json({ data })
   }
 }
 
