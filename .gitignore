@@ -1,0 +1,9 @@
+# MAC's Desktop Services Store file
+.DS_Store
+
+# IDE files
+.vscode
+
+# NPM files
+package-lock.json
+node_modules
