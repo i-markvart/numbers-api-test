@@ -24,7 +24,7 @@ npm run start
 
 To run application in development mode(using `nodemon`), execute:
 ```
-npm run start
+npm run dev
 ```
 
 ### Usage
