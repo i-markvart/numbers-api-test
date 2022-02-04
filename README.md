@@ -27,6 +27,13 @@ To run application in development mode(using `nodemon`), execute:
 npm run dev
 ```
 
+### Run tests
+
+To run unit tests, execute:
+```
+npm run test
+```
+
 ### Usage
 
 After project is started, service will be accessible via the link: http://localhost:3000/
