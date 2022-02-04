@@ -2,7 +2,7 @@
  * Checks if number is a multiple of another number
  *
  * @param {Number} number
- * @param {Number} multiplicity
+ * @param {Number} numberMultiple
  * @returns {Boolean}
  */
 function isMultipleOf(number, numberMultiple) {

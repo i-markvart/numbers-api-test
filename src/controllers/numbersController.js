@@ -9,9 +9,9 @@ class NumbersController {
    *
    * @param {object} req
    * @param {object} res
-   * @returns {Promise<*>}
+   * @returns {*}
    */
-  static async checkMultiplicity(req, res) {
+  static checkMultiplicity(req, res) {
     const { params: { number } } = req
 
     const multiplicityType = getMultiplicityType(Number(number))
